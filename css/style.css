@@ -1,0 +1,587 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-padding-top: 65px;
+}
+
+
+.clr {
+    clear: both;
+}
+
+/* End global  */
+
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.media {
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);/
+}
+
+
+.navbar-nav li {
+    margin-left: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+.navbar-nav .nav-item .nav-link {
+    color: #000000;
+    padding: 1rem;
+}
+
+
+
+.nav-link {
+    position: relative;
+    transition: all 1s;
+}
+
+
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 15px;
+    height: 3px;
+    background-color: rgb(225, 131, 131);
+    width: 0%;
+    transition: all 0.5s;
+}
+
+
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+.home h2::after {
+    content: "";
+    animation: typing 5s infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        content: " D|";
+    }
+
+    5% {
+        content: " De|";
+    }
+
+    11% {
+        content: " Deve|";
+    }
+
+    16% {
+        content: " Devel|";
+    }
+
+    19% {
+        content: " Develo|";
+    }
+
+    22% {
+        content: " Develop|";
+    }
+
+    25% {
+        content: " Develope|";
+    }
+
+    28% {
+        content: " Developer|";
+    }
+
+    31% {
+        content: " Developer|";
+    }
+
+    34% {
+        content: " D|";
+    }
+
+    37% {
+        content: " De|";
+    }
+
+    41% {
+        content: " Des|";
+    }
+
+    44% {
+        content: " Desi|";
+    }
+
+    47% {
+        content: " Desig|";
+    }
+
+    50% {
+        content: " Design|";
+    }
+
+    53% {
+        content: " Designe|";
+    }
+
+    56% {
+        content: " Designer|";
+    }
+
+    59% {
+        content: " Designer|";
+    }
+
+    62% {
+        content: " l|";
+    }
+
+    65% {
+        content: " la|";
+    }
+
+    68% {
+        content: " lar|";
+    }
+
+    71% {
+        content: " larr|";
+    }
+
+    74% {
+        content: " larry|";
+    }
+
+    77% {
+        content: " larry d|";
+    }
+
+    80% {
+        content: " larry da|";
+    }
+
+    83% {
+        content: " larry dan|";
+    }
+
+    86% {
+        content: " larry dani|";
+    }
+
+    89% {
+        content: " larry dania|";
+    }
+
+    92% {
+        content: " larry danial|";
+    }
+
+    95% {
+        content: " larry danials|";
+    }
+
+    100% {
+        content: " larry danials|";
+    }
+
+}
+
+
+.btn-about1 {
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 8rem;
+    background: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn-about1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.btn-about2 {
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 8rem;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+
+}
+
+.btn-about2:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.about-img {
+    position: relative;
+}
+
+.about-img::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+.scroll-bar {
+    position: relative;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    /* height: 30px; */
+    /* width: 37.5rem; */
+}
+
+.html {
+    color: white;
+    border-radius: 6px;
+    width: 0%;
+    background-color: black;
+    animation: progress1 2s forwards;
+}
+
+.html span {
+    float: right;
+}
+
+.css {
+    color: white;
+    border-radius: 5px;
+    width: 0%;
+    background-color: black;
+    animation: progress2 2s forwards;
+}
+
+.css span {
+    float: right;
+}
+
+.js {
+    color: white;
+    border-radius: 5px;
+    width: 0%;
+    background-color: black;
+    animation: progress3 2s forwards;
+}
+
+.js span {
+    float: right;
+}
+
+
+@keyframes progress1 {
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes progress2 {
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes progress3 {
+    to {
+        width: 90%;
+    }
+}
+
+
+/* Services Start */
+
+#Services {
+    background-color: #f7f7f7;
+}
+
+/* .dot {
+   
+    max-width: 20%;
+    margin: auto;
+} */
+
+.services {
+    position: relative;
+    display: inline-block;
+    top: -20px;
+    /* background-color: teal; */
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+}
+
+/* .services::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+} */
+
+
+.item {
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.item i {
+    background-color: #f4f4f8;
+    transition: all 0.5s;
+}
+
+.item:hover i {
+    background-color: black;
+    color: white;
+}
+
+/* Start Portfolio */
+
+
+.sorting {
+    margin-bottom: -1rem;
+}
+
+.sorting h5 {
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+.work-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-layer {
+    background-color: rgba(255, 255, 255, 0.883);
+    z-index: 99;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: -5px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.7s;
+
+}
+
+.work-img:hover .work-layer {
+    opacity: 1;
+    transform: translateY(-10px)
+}
+
+
+.mini-links span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mini-links span:hover {
+    background-color: white;
+}
+
+.mini-links span i {
+    color: rgb(255, 255, 255);
+}
+
+.mini-links span:hover i {
+    color: black;
+}
+
+.mini-links a {
+    color: white;
+}
+
+
+/* Start Testimonial */
+
+.feedback-img {
+    width: 90px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgb(75, 181, 121);
+    width: 15px;
+    height: 15px;
+}
+
+
+/* Start Team */
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card-img img {
+    transition: all 0.5s;
+}
+
+.card-img:hover img {
+    transform: scale(1.2)
+}
+
+.inlayer {
+    background-color: rgba(255, 255, 255, 0.883);
+    z-index: 99;
+    position: absolute;
+    inset: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+
+.card-img:hover .inlayer {
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+
+
+.card-links {
+    transform: rotateY(180deg);
+}
+
+
+.card-links span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-links span:hover {
+    background-color: white;
+}
+
+.card-links span i {
+    color: rgb(255, 255, 255);
+}
+
+.card-links span:hover i {
+    color: black;
+}
+
+.card-links a {
+    color: white;
+}
+
+.caption {
+    background-color: #5B5B5B;
+    color: white;
+}
+
+/* Start Contact */
+
+
+
+.method i {
+    background-color: #f4f4f8;
+    transition: all 0.5s;
+}
+
+.method:hover i {
+    background-color: black;
+    color: white;
+}
+
+
+form button {
+    width: 18%;
+    padding: 10px;
+}
+
+input,
+textarea {
+    padding: 0.9375rem 0.9375rem;
+    background-color: #F4F4F4;
+    font-family: inherit;
+    line-height: 1.5;
+    border: 2px solid #e8e3e3;
+    color: #212529;
+    transition: all 0.5s;
+}
+
+
+form :is(input, textarea):focus {
+    outline: none;
+    border-color: #4b2525;
+}
+
+.btn-form {
+    width: 165px;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+}
+
+.btn-form:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+footer {
+    background-color: #1C1C1C;
+}
